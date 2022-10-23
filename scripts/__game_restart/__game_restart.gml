@@ -2,7 +2,7 @@
 
 function __game_restart() {
   // This will destroy all instances. 
-  // Yes, this will run their cleanup events as well as their destroy event.
+  // This will run their cleanup events as well as their destroy event.
   with(all) {
 	instance_destroy();	
   }
