@@ -1,0 +1,11 @@
+lives--;
+
+instance_destroy();
+
+
+
+
+
+
+
+
