@@ -1,4 +1,4 @@
-#macro RESTART_ALL __game_restart();
+#macro RESTART_ALL __game_restart()
 
 function __game_restart() {
   // This will destroy all instances. 
@@ -8,7 +8,8 @@ function __game_restart() {
   }
 
   audio_stop_all();
-  draw_texture_flush();
+  //raw_texture_flush(); ???
+  
 
 
   // Go to the very first room, as per room order

@@ -3,8 +3,10 @@
 
 switch (room) {
 	case rm_start:
-		audio_stop_all();
-		audio_play_sound(snd_start, 2, true);	
+		audio_stop_all();	
+		if (os_browser == browser_not_a_browser) {
+			audio_play_sound(snd_start, 2, true);
+		}		
 		break;
 	
 	case rm_game:

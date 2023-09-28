@@ -10,6 +10,11 @@ if (keyboard_check_pressed(vk_enter)) {
 	}
 }
 
+// start music HTML
+if (os_browser && keyboard_check_pressed(ord("M")) && !audio_is_playing(snd_start)){
+			show_debug_message("kok")
+			audio_play_sound(snd_start, 2, true);
+		}
 
 if (room == rm_game){
 	if (score >= 100) {
